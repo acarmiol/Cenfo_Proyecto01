@@ -1,14 +1,14 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('myBlogs.blogs', ['ngRoute','firebase'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
+  $routeProvider.when('/blogs', {
+    templateUrl: 'blogs/blogs.html',
+    controller: 'BlogsCtrl'
   });
 }])
 
-.controller('View1Ctrl', [function() {
-
+.controller('BlogsCtrl', ['$scope','$firebaseArray', function($scope,$firebaseArray) {
+	console.log($scope)
 }]);

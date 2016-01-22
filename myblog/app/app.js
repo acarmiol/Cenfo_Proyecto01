@@ -1,8 +1,10 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myBlog', [
+angular.module('myBlogs', [
   'ngRoute',
+  'firebase',
+  'myBlogs.blogs'
 
  
 ]).
